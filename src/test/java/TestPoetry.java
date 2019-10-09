@@ -1,10 +1,10 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestPoetry {
+class TestPoetry {
 
     @Test
-    void givenDayOne_WhenPoem_ThenProvidesDayOnePoem() {
+    void givenDayOne_WhenPoemLines_ThenProvidesDayOnePoem() {
         Poetry poetry = new Poetry();
         Assertions.assertEquals("This is the house that Jack built." + "\n", poetry.poem(1));
     }

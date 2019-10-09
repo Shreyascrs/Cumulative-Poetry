@@ -13,6 +13,13 @@ repositories {
 test {
     useJUnitPlatform()
 }
+
+jar{
+    manifest {
+        attributes('Main-Class':'Main')
+    }
+}
+
 dependencies {
     testCompile 'org.junit.jupiter:junit-jupiter:5.4.1'
 }

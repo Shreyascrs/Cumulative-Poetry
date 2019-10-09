@@ -3,12 +3,11 @@ import java.util.List;
 
 public class Poetry {
 
-    String result = "This is ";
+    private String result = "This is ";
 
-    List<String> poemLines = new ArrayList<>();
+    private List<String> poemLines = new ArrayList<>();
 
     Poetry() {
-
         poemLines.add("the house that Jack built.");
         poemLines.add("the malt that lay in ");
         poemLines.add("the rat that ate ");
