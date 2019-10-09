@@ -8,7 +8,7 @@ class TestPoetry {
     @Test
     void givenDayOne_WhenPoemLines_ThenProvidesDayOnePoem() {
         Poetry poetry = new Poetry();
-        Assertions.assertEquals("This is the house that Jack built." + "\n", poetry.poem(args, 1));
+        Assertions.assertEquals("This is the house that Jack built." + "\n", poetry.poem(args.length, 1));
     }
 
     @Test
@@ -16,7 +16,7 @@ class TestPoetry {
         Poetry poetry = new Poetry();
         String result = "This is the malt that lay in \n" +
                 "the house that Jack built.\n";
-        Assertions.assertEquals(result, poetry.poem(args, 2));
+        Assertions.assertEquals(result, poetry.poem(args.length, 2));
     }
 
     @Test
@@ -34,7 +34,7 @@ class TestPoetry {
                 "the rat that ate \n" +
                 "the malt that lay in \n" +
                 "the house that Jack built.\n";
-        Assertions.assertEquals(result, poetry.poem(args, 12));
+        Assertions.assertEquals(result, poetry.poem(args.length, 12));
     }
     @Test
     void givenDayTwoWithEchoFlag_WhenPoemLines_ThenProvidesDayTwoPoem() {
@@ -44,6 +44,6 @@ class TestPoetry {
                 "the malt that lay in \n"+
                 "the house that Jack built.\n"+
                 "the house that Jack built.\n";
-        Assertions.assertEquals(result, poetry.poem(args, 2));
+        Assertions.assertEquals(result, poetry.poem(args.length, 2));
     }
 }

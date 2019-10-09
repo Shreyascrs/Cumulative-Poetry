@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestPoetry" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-09T07:43:51" hostname="Shreyass-MacBook-Pro.local" time="0.015">
+<testsuite name="TestPoetry" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-09T09:14:57" hostname="Shreyass-MacBook-Pro.local" time="0.016">
   <properties/>
   <testcase name="givenDayTwo_WhenPoemLines_ThenProvidesDayTwoPoem()" classname="TestPoetry" time="0.012"/>
   <testcase name="givenDayOne_WhenPoemLines_ThenProvidesDayOnePoem()" classname="TestPoetry" time="0.001"/>
   <testcase name="givenDayTwelve_WhenPoemLines_ThenProvidesDayTwelvePoem()" classname="TestPoetry" time="0.001"/>
+  <testcase name="givenDayTwoWithEchoFlag_WhenPoemLines_ThenProvidesDayTwoPoem()" classname="TestPoetry" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

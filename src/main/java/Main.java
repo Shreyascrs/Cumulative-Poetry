@@ -10,7 +10,7 @@ public class Main {
         }
         if(day>0 && day<=12) {
             Poetry poetry = new Poetry();
-            System.out.println(poetry.poem(args, day));
+            System.out.println(poetry.poem(args.length, day));
                 System.exit(0);
         }
         System.out.println("invalid selection of days");

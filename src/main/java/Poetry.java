@@ -22,18 +22,15 @@ public class Poetry {
         poemLines.add("the horse and the hound and the horn that belonged to ");
     }
 
-    public String poem(String[] args, int day) {
+    public String poem(int argsLength, int day) {
 
-        if (args.length == 3) {
+
             for (int i = day; i > 0; i--) {
-                result += poemLines.get(--day) + "\n" + poemLines.get(day) + "\n";
+                result += poemLines.get(--day) + "\n";
+                if (argsLength == 3) {
+                    result += poemLines.get(day) + "\n";
+                }
             }
-        }
-        if (args.length == 2) {
-        for (int i = day; i > 0; i--) {
-            result += poemLines.get(--day) + "\n";
-        }
-        }
         return result;
     }
 }
