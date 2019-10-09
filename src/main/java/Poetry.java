@@ -22,9 +22,17 @@ public class Poetry {
         poemLines.add("the horse and the hound and the horn that belonged to ");
     }
 
-    public String poem(int day) {
+    public String poem(String[] args, int day) {
+
+        if (args[0].equals("--echo")) {
+            for (int i = day; i > 0; i--) {
+                result += poemLines.get(--day) + "\n" + poemLines.get(day) + "\n";
+            }
+        }
+        if (args[0].equals("--reveal-for-day")) {
         for (int i = day; i > 0; i--) {
             result += poemLines.get(--day) + "\n";
+        }
         }
         return result;
     }
