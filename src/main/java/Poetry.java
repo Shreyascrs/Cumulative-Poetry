@@ -24,12 +24,12 @@ public class Poetry {
 
     public String poem(String[] args, int day) {
 
-        if (args[0].equals("--echo")) {
+        if (args.length == 3) {
             for (int i = day; i > 0; i--) {
                 result += poemLines.get(--day) + "\n" + poemLines.get(day) + "\n";
             }
         }
-        if (args[0].equals("--reveal-for-day")) {
+        if (args.length == 2) {
         for (int i = day; i > 0; i--) {
             result += poemLines.get(--day) + "\n";
         }

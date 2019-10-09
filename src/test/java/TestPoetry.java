@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 
 class TestPoetry {
 
+
     String[] args={"--reveal-for-day","--echo"};
     @Test
     void givenDayOne_WhenPoemLines_ThenProvidesDayOnePoem() {
@@ -34,5 +35,15 @@ class TestPoetry {
                 "the malt that lay in \n" +
                 "the house that Jack built.\n";
         Assertions.assertEquals(result, poetry.poem(args, 12));
+    }
+    @Test
+    void givenDayTwoWithEchoFlag_WhenPoemLines_ThenProvidesDayTwoPoem() {
+        String[] args={"--reveal-for-day","--echo",""};
+        Poetry poetry = new Poetry();
+        String result = "This is the malt that lay in \n" +
+                "the malt that lay in \n"+
+                "the house that Jack built.\n"+
+                "the house that Jack built.\n";
+        Assertions.assertEquals(result, poetry.poem(args, 2));
     }
 }
