@@ -1,14 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Poetry {
+public class EchoFlag extends Poetry {
+    private int echoTimes = 1;
+
+    public void setEchoTimes(int echoTimes) {
+        this.echoTimes = echoTimes;
+    }
 
     private String result = "This is ";
 
 
     private List<String> poemLines = new ArrayList<>();
 
-    Poetry() {
+    EchoFlag() {
         poemLines.add("the house that Jack built.");
         poemLines.add("the malt that lay in ");
         poemLines.add("the rat that ate ");
@@ -23,18 +28,14 @@ public class Poetry {
         poemLines.add("the horse and the hound and the horn that belonged to ");
     }
 
+    @Override
     public String poem(int day) {
         for (int i = day; i > 0; i--) {
-
-            result += poemLines.get(--day) + "\n";
+            day = --day;
+            for (int j = 0; j < echoTimes; j++) {
+                result += poemLines.get(day) + "\n";
+            }
         }
         return result;
     }
-
-//    private void numberOfTimesToPrint(int day) {
-//        for (int j = 0; j < echoTimes; j++) {
-//            result += poemLines.get(day) + "\n";
-//        }
-//    }
-
 }
