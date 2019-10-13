@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestPoetry" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-09T13:21:52" hostname="Shreyass-MacBook-Pro.local" time="0.015">
+<testsuite name="TestPoetry" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-10-13T12:29:58" hostname="Shreyass-MacBook-Pro.local" time="0.021">
   <properties/>
-  <testcase name="givenDayTwo_WhenPoemLines_ThenProvidesDayTwoPoem()" classname="TestPoetry" time="0.012"/>
-  <testcase name="givenDayOne_WhenPoemLines_ThenProvidesDayOnePoem()" classname="TestPoetry" time="0.001"/>
-  <testcase name="givenDayTwelve_WhenPoemLines_ThenProvidesDayTwelvePoem()" classname="TestPoetry" time="0.001"/>
-  <testcase name="givenDayTwoWithEchoFlag_WhenPoemLines_ThenProvidesDayTwoPoem()" classname="TestPoetry" time="0.001"/>
+  <testcase name="givendayTwoWithALternateAndEchoFlag_WhenPoemLines_ThenProvidesDayPoemInUpperCaseWithAlternativeFlag()" classname="TestPoetry" time="0.014"/>
+  <testcase name="givenDayTwoWithALternateAndEchoFlag_WhenPoemLines_ThenProvidesDayPoemInUpperCase()" classname="TestPoetry" time="0.0"/>
+  <testcase name="givendayTwoWithUppercaseAndEchoFlag_WhenPoemLines_ThenProvidesDayPoemInUpperCaseWithAlternativeFlag()" classname="TestPoetry" time="0.0"/>
+  <testcase name="givenDayOneWithEchoFlagFlagTwo_WhenPoemLines_ThenProvidesDayOnePoem()" classname="TestPoetry" time="0.0"/>
+  <testcase name="givenDayOneWithEchoFlagOne_WhenPoemLines_ThenProvidesDayOnePoem()" classname="TestPoetry" time="0.0"/>
+  <testcase name="givenDayTwoWithALternateAndToUpperCaseFlag_WhenPoemLines_ThenProvidesDayPoemInUpperCaseWithAlternativeFlag()" classname="TestPoetry" time="0.001"/>
+  <testcase name="givenDayTwoToUpperCase_WhenPoemLines_ThenProvidesDayPoemInUpperCase()" classname="TestPoetry" time="0.001"/>
+  <testcase name="givendayTwoWithEchoFlagAndReveleForTheDay_WhenPoemLines_ThenProvidesDayPoemInUpperCaseWithAlternativeFlag()" classname="TestPoetry" time="0.001"/>
+  <testcase name="givenDayOneToUpperCase_WhenPoemLines_ThenProvidesDayPoemInUpperCase()" classname="TestPoetry" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

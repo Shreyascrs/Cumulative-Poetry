@@ -1,3 +1,6 @@
+import formatter.Formatter;
+import formatter.ToUpperFormatter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,10 +8,11 @@ public class Poetry {
 
     private String result = "This is ";
 
-
     private List<String> poemLines = new ArrayList<>();
+    private Formatter formatter;
 
-    Poetry() {
+    Poetry(Formatter formatter) {
+        this.formatter = formatter;
         poemLines.add("the house that Jack built.");
         poemLines.add("the malt that lay in ");
         poemLines.add("the rat that ate ");
@@ -24,17 +28,15 @@ public class Poetry {
     }
 
     public String poem(int day) {
-        for (int i = day; i > 0; i--) {
 
-            result += poemLines.get(--day) + "\n";
+        if (formatter instanceof ToUpperFormatter) {
+            result = result.toUpperCase();
         }
+        for (int i = day - 1; i >= 0; i--) { // TODO - very complicated logic.
+
+            result += formatter.format(poemLines.get(i));
+        }
+
         return result;
     }
-
-//    private void numberOfTimesToPrint(int day) {
-//        for (int j = 0; j < echoTimes; j++) {
-//            result += poemLines.get(day) + "\n";
-//        }
-//    }
-
 }
